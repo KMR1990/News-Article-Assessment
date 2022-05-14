@@ -1,0 +1,1482 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display:block
+}
+
+body{
+	line-height:1
+}
+
+ol,ul{
+	list-style:none
+}
+
+blockquote,q{
+	quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after{
+	content:'';content:none
+}
+
+table{
+	border-collapse:collapse;border-spacing:0
+}
+
+.gallery *,
+  .gallery *:before,
+  .gallery *:after{
+    box-sizing:border-box;
+  }
+  
+  div{
+    font-family:Georgia,TimesNewRoman,'Times New Roman',Times,serif;
+    font-size:14px;
+    line-height:18px;
+  }
+  
+  .gallery{
+    display:block;
+    width:800px;
+    margin:0 auto;
+    overflow:hidden;
+    max-width:960px;
+    padding: 20px 0 20 0;
+    margin-top: 10px;
+  }
+
+  .gallery .subgal1{
+    width: 70%;
+    display:block;
+    margin:0 auto;
+    overflow:hidden;
+    float: left;
+    border-top: 2px solid #9e9e9e;
+    border-bottom: 2px solid #9e9e9e;
+    padding: 20px 0 20 0;
+  }
+
+  .gallery .subgal2{
+    width: 70%;
+    display:block;
+    margin:0 auto;
+    overflow:hidden;
+    float: left;
+    padding: 20px 0 20 0;
+  }
+
+  .gallery .sidegallary{
+    width: 25%;
+    display:block;
+    margin:0 auto;
+    overflow:hidden;
+    float: left;
+  }
+
+  .gallery2{
+    display:block;
+    width:100%;
+    margin:0 auto;
+    overflow:hidden;
+    max-width:960px;
+    padding: 20px 0 20 0;
+  }
+  
+  .gallery .tile{
+    display:block;
+    width:100%;
+    padding:0 0.5em 0.5em 0;
+  }
+  
+  .gallery .tile .post{
+    background-color:#003152;
+    color:#f0f0f0;
+    text-align:center;
+    padding:1.1em 1em;
+  }
+      
+  
+  .gallery .tile.full .post{
+    /* as above this is just cosmetic */
+    background-color:#059029;
+  }
+  
+  @media screen and (min-width:480px){
+    .gallery .tile{
+      width:49%;
+      float:left;
+      margin: 5px;
+    }
+    .gallery .tile.wide,
+    .gallery .tile.full{
+      width:100%;
+    }
+
+    .gallery .tile.long{
+        width:100%;   
+        float: left;  
+        display: flex;   
+        flex-direction: column;        
+    }
+    .gallery .sidegallary .tile.long img{
+        width: 50px;
+        height: 35px;  
+        border-radius: 5px;
+    }
+    .gallery .tile.long .division{
+        display: table;
+        border-bottom: 1px dotted black;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .gallery .tile.long .division:last-child{
+      border: none;
+    }
+
+    .gallery .tile.long .division .smallImg{
+      display: table-cell;
+      width: 50px;
+      min-width: 50px;
+      max-width: 50px;
+      vertical-align: middle;
+    }
+    .gallery .tile.long .post{
+        background-color:white;
+        color: #3e3d3dd6;
+        font-size: 11px;
+        display: flex;
+        display: table-cell;
+        width: 100%;
+        text-align: justify;
+        font-family: sans-serif;
+        font-weight: 600;
+        line-height: 11px;
+    }
+
+    .gallery .tile.long .division{
+      display: table;
+      border-bottom: 1px dotted black;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    .gallery .tile.long .division:last-child{
+      border: none;
+    }
+    .gallery .tile.long .division .smallImg{
+    display: table-cell;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    vertical-align: middle;
+  }
+  .gallery .tile.long .post{
+      background-color:white;
+      color: #3e3d3dd6;
+      font-size: 11px;
+      display: flex;
+      display: table-cell;
+      width: 100%;
+      text-align: justify;
+      font-family: sans-serif;
+      font-weight: 600;
+      line-height: 11px;
+  }
+
+  /*fashion*/
+    .gallery .subgal1 .tile.wide.fashion .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.fashion{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.fashion .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.fashion .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList .post:last-child{
+      border: none;
+    }
+    /*fashion*/
+
+    /*Travel*/
+    .gallery .subgal1 .tile.wide.travel .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.travel{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.travel .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.travel .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+    .gallery .tile.wide.travel{
+      float: right;
+      min-height: 550px;
+    }
+    
+     .gallery .tile.wide.travel .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.travel .travelList{
+        display: table;      
+      }
+      .gallery .subgal1 .tile.wide.travel .travelList .post{
+        background-color: white;
+        color: black;
+        font-size: 11px;
+        display: inline-block;
+        width: 100%;
+        font-family: sans-serif;
+        border-bottom: 1px solid #cfcfcf;
+        text-align: justify;
+      }
+      .gallery .subgal1 .tile.wide.travel .travelList .post:last-child{
+        border: none;
+      }
+
+      /*Travel*/
+    
+      /*beauty*/
+      .gallery .tile.wide.beauty .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.beauty .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.beauty{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.beauty .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.beauty .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .gallery .subgal1 .tile.wide.beauty .beautyList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.beauty .beautyList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.beauty .beautyList .post:last-child{
+      border: none;
+    }
+
+      /*beauty*/
+    
+      /*Books*/
+      .gallery .tile.wide.books{
+        float: right;
+        min-height: 550px;
+      }
+
+      .gallery .tile.wide.books .post{
+          background-color:white;
+          color: black;
+          display: flex;          
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.books .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.books{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.books .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.books .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .gallery .subgal1 .tile.wide.books .booksList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.books .booksList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.books .booksList .post:last-child{
+      border: none;
+    }
+      /*Books*/
+    
+      .gallery .tile.wide.fashion .fashionImg{
+          background-image: url("./images/fashion.jpg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;        
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }
+    
+      .gallery .tile.wide.travel .travelImg{
+          background-image: url("./images/travel.jpg");
+          background-size: 100% 100%;; 
+          background-repeat: no-repeat;       
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }    
+    
+      .gallery .tile.wide.beauty .beautyImg{
+          background-image: url("./images/beauty.jpg");
+          background-size: 100% 100%;;
+          background-repeat: no-repeat;        
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }    
+    
+      .gallery .tile.wide.books .booksImg{
+          background-image: url("./images/books.jpg");
+          background-size: 100% 100%;;        
+          background-repeat: no-repeat;
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }
+    
+      .gallery .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .divFooter .post{
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-bottom: 10px;
+      font-family: sans-serif;
+   }
+    
+     .gallery2 .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .tile.wide.fashion, .tile.wide.travel, .tile.wide.beauty, .tile.wide.books{
+        border: 1px solid #cfcfcf;
+     }
+
+  }
+  
+  @media screen and (min-width:720px){
+    .gallery .tile{
+      width:33.333%;
+      float:left;
+    }
+    .gallery .tile.wide{
+      width:100%;
+    }
+
+    .gallery .tile.long .division{
+      display: table;
+      border-bottom: 1px dotted black;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    .gallery .tile.long .division:last-child{
+      border: none;
+    }
+    .gallery .tile.long .division .smallImg{
+    display: table-cell;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    vertical-align: middle;
+  }
+  .gallery .tile.long .post{
+      background-color:white;
+      color: #3e3d3dd6;
+      font-size: 11px;
+      display: flex;
+      display: table-cell;
+      width: 100%;
+      text-align: justify;
+      font-family: sans-serif;
+      font-weight: 600;
+      line-height: 11px;
+  }
+
+  /*fashion*/
+    .gallery .subgal1 .tile.wide.fashion .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.fashion{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.fashion .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.fashion .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.fashion .fashionList .post:last-child{
+      border: none;
+    }
+    /*fashion*/
+
+    /*Travel*/
+    .gallery .subgal1 .tile.wide.travel .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.travel{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.travel .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.travel .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+    .gallery .tile.wide.travel{
+      float: right;
+      min-height: 550px;
+    }
+    
+     .gallery .tile.wide.travel .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.travel .travelList{
+        display: table;      
+      }
+      .gallery .subgal1 .tile.wide.travel .travelList .post{
+        background-color: white;
+        color: black;
+        font-size: 11px;
+        display: inline-block;
+        width: 100%;
+        font-family: sans-serif;
+        border-bottom: 1px solid #cfcfcf;
+        text-align: justify;
+      }
+      .gallery .subgal1 .tile.wide.travel .travelList .post:last-child{
+        border: none;
+      }
+
+      /*Travel*/
+    
+      /*beauty*/
+      .gallery .tile.wide.beauty .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.beauty .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.beauty{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.beauty .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.beauty .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .gallery .subgal1 .tile.wide.beauty .beautyList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.beauty .beautyList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.beauty .beautyList .post:last-child{
+      border: none;
+    }
+
+      /*beauty*/
+    
+      /*Books*/
+      .gallery .tile.wide.books{
+        float: right;
+        min-height: 550px;
+      }
+
+      .gallery .tile.wide.books .post{
+          background-color:white;
+          color: black;
+          display: flex;          
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+
+      .gallery .subgal1 .tile.wide.books .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .gallery .subgal1 .tile.wide.books{
+      min-height: 550px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      padding-bottom: 40px;
+      position: relative;
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    }
+    .gallery .subgal1 .tile.wide.books .seeAll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;/* height: 40px; */
+      border-top: 1px solid #cfcfcf;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(233, 86, 86);
+    }    
+    .gallery .subgal1 .tile.wide.books .seeAll a{
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .gallery .subgal1 .tile.wide.books .booksList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.books .booksList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.books .booksList .post:last-child{
+      border: none;
+    }
+      /*Books*/
+    
+      .gallery .tile.wide.fashion .fashionImg{
+          background-image: url("./images/fashion.jpg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;        
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }
+    
+      .gallery .tile.wide.travel .travelImg{
+          background-image: url("./images/travel.jpg");
+          background-size: 100% 100%;; 
+          background-repeat: no-repeat;       
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }    
+    
+      .gallery .tile.wide.beauty .beautyImg{
+          background-image: url("./images/beauty.jpg");
+          background-size: 100% 100%;;
+          background-repeat: no-repeat;        
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }    
+    
+      .gallery .tile.wide.books .booksImg{
+          background-image: url("./images/books.jpg");
+          background-size: 100% 100%;;        
+          background-repeat: no-repeat;
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 10px;
+      }
+    
+      .gallery .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .divFooter .post{
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-bottom: 10px;
+      font-family: sans-serif;
+   }
+    
+     .gallery2 .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .tile.wide.fashion, .tile.wide.travel, .tile.wide.beauty, .tile.wide.books{
+        border: 1px solid #cfcfcf;
+     }
+
+  }
+  
+  @media screen and (min-width:960px){
+    .gallery .tile{
+      width:25%;
+      float:left;
+    }
+    .gallery .tile.wide{
+      width:49%;
+      margin: 5px;
+    }
+
+    .gallery .tile.wide.fashion .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    
+     .gallery .tile.wide.travel .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+    
+      .gallery .tile.wide.beauty .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+    
+      .gallery .tile.wide.books .post{
+          background-color:white;
+          color: black;
+          display: flex;
+          font-size: 1em;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+    
+      .gallery .tile.wide.fashion .fashionImg{
+          background-image: url("./images/fashion.jpg");
+          background-size: 100% 100%;;  
+          background-repeat: no-repeat;      
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 13px;
+      }
+    
+      .gallery .tile.wide.travel .travelImg{
+          background-image: url("./images/travel.jpg");
+          background-size: 100% 100%;;
+          background-repeat: no-repeat;        
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 13px;
+      }    
+    
+      .gallery .tile.wide.beauty .beautyImg{
+          background-image: url("./images/beauty.jpg");
+          background-size: 100% 100%;;        
+          background-repeat: no-repeat;
+          width: 235px;
+          height: 150px;
+          border-radius: 7px;
+          margin-left: 13px;
+      }    
+    
+      .gallery .tile.wide.books .booksImg{
+          background-image: url("./images/books.jpg");
+          background-size: 100% 100%;;        
+          background-repeat: no-repeat;
+          width: 235px;
+          height: 150px;
+          box-shadow: black;
+          border-radius: 7px;
+          margin-left: 13px;
+      }
+
+      /*fashion*/
+    .gallery .subgal1 .tile.wide.fashion .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.fashion{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.fashion .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.fashion .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList .post:last-child{
+    border: none;
+  }
+  /*fashion*/
+
+  /*Travel*/
+  .gallery .subgal1 .tile.wide.travel .post{
+    background-color:white;
+    color: black;
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.gallery .subgal1 .tile.wide.travel{
+  min-height: 550px;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #cfcfcf;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  position: relative;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+.gallery .subgal1 .tile.wide.travel .seeAll{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;/* height: 40px; */
+  border-top: 1px solid #cfcfcf;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgb(233, 86, 86);
+}    
+.gallery .subgal1 .tile.wide.travel .seeAll a{
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+  .gallery .tile.wide.travel{
+    float: right;
+    min-height: 550px;
+  }
+  
+   .gallery .tile.wide.travel .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.travel .travelList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.travel .travelList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.travel .travelList .post:last-child{
+      border: none;
+    }
+
+    /*Travel*/
+  
+    /*beauty*/
+    .gallery .tile.wide.beauty .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.beauty .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.beauty{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.beauty .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.beauty .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .gallery .subgal1 .tile.wide.beauty .beautyList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.beauty .beautyList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.beauty .beautyList .post:last-child{
+    border: none;
+  }
+
+    /*beauty*/
+  
+    /*Books*/
+    .gallery .tile.wide.books{
+      float: right;
+      min-height: 550px;
+    }
+
+    .gallery .tile.wide.books .post{
+        background-color:white;
+        color: black;
+        display: flex;          
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.books .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.books{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.books .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.books .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .gallery .subgal1 .tile.wide.books .booksList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.books .booksList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.books .booksList .post:last-child{
+    border: none;
+  }
+    /*Books*/
+    
+      .gallery .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .divFooter .post{
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-bottom: 10px;
+      font-family: sans-serif;
+   }
+    
+     .gallery2 .divHeader .post{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+     }
+
+     .gallery .tile.wide.fashion, .tile.wide.travel, .tile.wide.beauty, .tile.wide.books{
+        border: 1px solid #cfcfcf;
+     }
+
+     img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+
+    /*fashion*/
+    .gallery .subgal1 .tile.wide.fashion .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.fashion{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.fashion .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.fashion .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.fashion .fashionList .post:last-child{
+    border: none;
+  }
+  /*fashion*/
+
+  /*Travel*/
+  .gallery .subgal1 .tile.wide.travel .post{
+    background-color:white;
+    color: black;
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.gallery .subgal1 .tile.wide.travel{
+  min-height: 550px;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #cfcfcf;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  position: relative;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+.gallery .subgal1 .tile.wide.travel .seeAll{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;/* height: 40px; */
+  border-top: 1px solid #cfcfcf;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgb(233, 86, 86);
+}    
+.gallery .subgal1 .tile.wide.travel .seeAll a{
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+  .gallery .tile.wide.travel{
+    float: right;
+    min-height: 550px;
+  }
+  
+   .gallery .tile.wide.travel .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.travel .travelList{
+      display: table;      
+    }
+    .gallery .subgal1 .tile.wide.travel .travelList .post{
+      background-color: white;
+      color: black;
+      font-size: 11px;
+      display: inline-block;
+      width: 100%;
+      font-family: sans-serif;
+      border-bottom: 1px solid #cfcfcf;
+      text-align: justify;
+    }
+    .gallery .subgal1 .tile.wide.travel .travelList .post:last-child{
+      border: none;
+    }
+
+    /*Travel*/
+  
+    /*beauty*/
+    .gallery .tile.wide.beauty .post{
+        background-color:white;
+        color: black;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.beauty .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.beauty{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.beauty .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.beauty .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .gallery .subgal1 .tile.wide.beauty .beautyList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.beauty .beautyList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.beauty .beautyList .post:last-child{
+    border: none;
+  }
+
+    /*beauty*/
+  
+    /*Books*/
+    .gallery .tile.wide.books{
+      float: right;
+      min-height: 550px;
+    }
+
+    .gallery .tile.wide.books .post{
+        background-color:white;
+        color: black;
+        display: flex;          
+        font-size: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .gallery .subgal1 .tile.wide.books .post{
+      background-color:white;
+      color: black;
+      display: flex;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  .gallery .subgal1 .tile.wide.books{
+    min-height: 550px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  }
+  .gallery .subgal1 .tile.wide.books .seeAll{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;/* height: 40px; */
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(233, 86, 86);
+  }    
+  .gallery .subgal1 .tile.wide.books .seeAll a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .gallery .subgal1 .tile.wide.books .booksList{
+    display: table;      
+  }
+  .gallery .subgal1 .tile.wide.books .booksList .post{
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: justify;
+  }
+  .gallery .subgal1 .tile.wide.books .booksList .post:last-child{
+    border: none;
+  }
+    /*Books*/
+
+  }
+
+
+  
+
